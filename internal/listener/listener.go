@@ -17,6 +17,7 @@ type CustomListener struct {
 }
 
 // NewCustomListener creates a new TCP listener
+// @toDo: Add support for custom listener options
 func NewCustomListener(address string, port int) (*CustomListener, error) {
 	// Create TCP socket
 	socket, err := syscall.Socket(syscall.AF_INET, syscall.SOCK_STREAM, 0)

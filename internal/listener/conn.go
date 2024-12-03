@@ -17,6 +17,7 @@ type CustomConn struct {
 }
 
 // NewCustomConn creates a new custom connection
+// @toDo: Add support for custom connection options
 func NewCustomConn(fd int, remoteAddr, localAddr net.Addr) *CustomConn {
 	return &CustomConn{
 		fd:         fd,
